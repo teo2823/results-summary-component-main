@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container-result {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 42vh;
+    text-align: center;
+    background-image: linear-gradient(hsl(252, 100%, 67%),  hsl(241, 96%, 54%)) ;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+
+.container-result p:first-child {
+    margin-top: 10px;
+    padding: 15px 0px;
+    font-size: 0.75em;
+    color: hsl(241, 100%, 89%);
+}
+
+.result {
+    display: grid;
+    place-content: center;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 100px;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),  hsla(241, 72%, 46%, 0));
+}
+
+.result h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 2.3em;
+}
+
+.result p {
+    font-size: 0.6em;
+    color: hsl(241, 57%, 74%);
+}
+
+.text-result h3 {
+    margin: 20px 0px 8px 0px;
+    font-size: 0.95em;
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+}
+
+.text-result p {
+    font-size: 0.65em;
+    width: 70%;
+    margin: auto;
+    color: hsl(241, 81%, 86%);
+    padding-bottom: 35px;
+}
+
+.summary {
+    padding: 20px;
+    height: 58vh;
+}
+
+.summary p:first-child {
+    font-size: 0.75em;
+    font-weight: 800;
+    color: hsl(224, 30%, 28%);
+    margin-bottom: 20px;
+}
+
+.sumary-item {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.component {
+    display: flex;
+}
+
+.component p {
+    font-size: 0.8em;
+}
+
+.component img {
+    padding: 0px 10px;
+    width: 35px;
+}
+
+.reaction p {
+    color:hsl(0, 100%, 67%);
+}
+
+.reaction {
+    background-color: hsl(0, 100%, 67%, 5%);
+}
+
+.memory {
+    background-color: hsl(39, 100%, 56%, 5%);
+}
+
+.memory p {
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+    background-color: hsl(166, 100%, 37%, 5%);
+}
+
+.verbal p {
+    color: hsl(166, 100%, 37%);
+}
+.visual {
+    background-color:  hsl(234, 85%, 45%, 5%);
+}
+
+.visual{
+    color: hsl(234, 85%, 45%)
+}
+
+p.puntaje {
+    padding: 0px 15px;
+    font-size: 0.7em;
+}
+
+p.puntaje strong {
+    color: hsl(224, 30%, 27%);
+}
+p.puntaje {
+    color: hsl(241, 30%, 65%);
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    height: 45px;
+    color: hsl(0, 0%, 100%);
+    font-family: ''Hanken Grotesk', sans-serif;';
+    font-weight: 500l;
+    border-radius: 30px;
+    background-color: rgb(66, 54, 99);
+}
+
+@media screen and (min-width:600px){
+    .div-result {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .result{
+        width: 150px;
+        height: 150px;
+    }
+    .container-result p:first-child {
+        margin-top: 0px;
+    }
+}
+
+
+@media screen and (min-width: 800px){
+    body{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-content: center;
+    }
+    main{
+        width: 700px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        box-shadow: 10px 1px 30px grey;
+    }
+    .div-result {
+        flex-direction: column;
+    }
+    .container-result{
+        height: 100%;
+        width: 50%;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+    }
+    .summary{
+        width: 50%;
+        height: 100%;
+    }
+
+}
